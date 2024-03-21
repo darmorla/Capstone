@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', path='/capstone/css/index.css') }}" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DamolaJohnson</title>
+    
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="brand-title">CHOP</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">My URLs</a></li>
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <div class="container-left">
+        <h1>The Latest URL Shortener</h1>
+        <h5>Create shorter URLs with Chop.</h5>
+        <p>
+          Want more out of your link shortener? Track link analytics, use
+          branded domains for fully custom links, and manage your links by
+           opening an account.
+        </p>
+        <div class="btns">
+          <button class="btn btn-left">View plans</button>
+          <button class="btn btn-right">Create free Account</button>
+        </div>
+      </div>
+
+      <div class="container-right">
+        <p class="left-p">
+          <span><img src="/static/img/link.png" alt="Link Image"></span>Shorten a long URL
+        </p>
+        <input
+          class="long-link"
+          type="text"
+          name="url"
+          placeholder="Enter long link here"
+        />
+
+        <p class="left-p">Customize your link</p>
+
+        <input
+          class="tinyurl"
+          type="text"
+          name="url"
+          placeholder="djsurl.com"
+        />
+
+        <input class="alias" type="text" name="url" placeholder="Enter alias" />
+        <br />
+        <button class="btn-shorten">Chop URL</button>
+        <p class="terms">
+          By clicking Shorten URL, i agree to the terms of Service, privacy
+          policy and use of cookies.
+        </p>
+      </div>
+    </div>
+    <script src="{{ url_for('static', path='/capstone/js/index.js') }}"></script>
+    
+  </body>
+</html>
+  
